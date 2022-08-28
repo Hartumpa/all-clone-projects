@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/deb2c37576.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js" defer></script>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEUAAAD////V1dWWlpZ0dHTPz89qamrh4eGQkJDk5OTR0dGtra3Y2NgWv+ptAAABL0lEQVR4nO3cMQ7CQAxFwQCBQOD+56Wms2RHxjDvAKs/vbXLqaR1qW+tmbbUPENISJiIMBghIWEiwmCEhISJCIMREhImIgxGSEiYiDAYISFhIsJghISEiQiDERISJiIMRkhImIgwGCEhYSLCYISEhIkIgxESEiYiDPb7wtsBwlvNtCLhdq5vq5lWJPziCOdHOD/C+RHOj3B+hPMjnB/h/AjnRzg/wvkRzo9wfoTzI5wf4fz+QHip6P44YNrjXrKt6KrgeoDwWrStJkJCwv4ICQn7IyQk7I+QkLA/QkLC/ggJCfsjJCTsj5CQsD9CQsL+CAkJ+yMkJOyPkJCwP0JCwv4ICQn7IyQk7G8/QLh3oz56vsq/oH09u1GSJEmSJEmSJEmSJEmSJEmSJEmSJP1rbwwaXQZE0kwUAAAAAElFTkSuQmCC"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Current Events | Unsplash</title>
+	</head>
+	<body>
+		<nav id="navbar">
+			<div class="row-1">
+				<a href="main1.html">
+					<img
+						class="logo"
+						src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/tbvbvipimh2camf5nb2q"
+						alt="unsplash logo"
+					/>
+				</a>
+				<div id="search-bar">
+					<i class="fa-solid fa-magnifying-glass fa-search"></i>
+					<input type="text" placeholder="Search free high-resolution photos" />
+				</div>
+				<div class="links">
+					<a href="advertise.html">Advertise</a>
+					<a href="blog.html">Blog</a>
+					<span id="vertical-bar">|</span>
+					<a href="Login.html">Log in</a>
+					<span id="forward-slash">/</span>
+					<a href="SignUp.html">Sign up</a>
+					<span id="user-name"></span>
+					<img
+						id="profile-photo"
+						src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png"
+						alt="image"
+					/>
+					<button id="submit">Submit a photo</button>
+				</div>
+				<i class="fa-solid fa-bars fa-hamburger-menu"></i>
+			</div>
+			<div class="row-2">
+				<a href="main1.html">Editorial</a>
+				<span>|</span>
+				<a href="current-events.html">Current Events</a>
+				<a href="wallpapers.html">Wallpapers</a>
+				<a href="3d-renders.html">3D Renders</a>
+				<a href="textures_patterns.html">Textures & Patterns</a>
+				<a href="experimental.html">Experimental</a>
+				<a href="architecture.html">Architecture</a>
+				<a href="nature.html">Nature</a>
+				<a href="business_work.html">Business & Work</a>
+				<a href="fashion.html">Fashion</a>
+				<a href="film.html">Film</a>
+				<a href="food_drink.html">Food & Drink</a>
+				<a href="health_wellness.html">Health & Wellness</a>
+				<a href="people.html">People</a>
+			</div>
+		</nav>
+		<div id="menu" class="visible">
+			<div id="info">
+				<div>
+					<details>
+						<summary>
+							<header>
+								<svg width="24" height="24" class="CnNKA" viewBox="0 0 24 24">
+									<path
+										opacity=".5"
+										d="M2.804 15.477s.142 1.738.175 2.286c.044.735.328 1.556.802 2.126.67.808 1.457 1.093 2.51 1.095 1.236.002 10.231.002 11.468 0 1.052-.002 1.84-.287 2.51-1.095.473-.57.757-1.391.802-2.126.032-.548.174-2.286.174-2.286"
+										stroke="#111"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+									<path
+										d="M8.496 5.33v-.372c0-1.22.988-2.208 2.208-2.208h2.582c1.219 0 2.208.989 2.208 2.208l.001.372M11.995 16.678v-1.294"
+										stroke="#111"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+									<path
+										clip-rule="evenodd"
+										d="M2.75 8.39v3.466c1.918 1.265 4.216 2.151 6.738 2.502a2.584 2.584 0 012.502-1.908c1.188 0 2.2.807 2.483 1.918 2.532-.35 4.839-1.237 6.767-2.512V8.39a3.05 3.05 0 00-3.057-3.058H5.817A3.06 3.06 0 002.75 8.39z"
+										stroke="#111"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+								</svg>
+								<p>Company</p>
+								<svg
+									width="32"
+									height="32"
+									class="Arrow"
+									viewBox="0 0 32 32"
+									version="1.1"
+									aria-hidden="false"
+								>
+									<path
+										d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"
+									></path>
+								</svg>
+							</header>
+						</summary>
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">History</a></li>
+							<li><a href="#">Join the team</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Help Center</a></li>
+							<li>
+								<i class="fa-brands fa-twitter"></i
+								><i class="fa-brands fa-facebook"></i
+								><i class="fa-brands fa-instagram"></i>
+							</li>
+						</ul>
+					</details>
+					<header>
+						<svg width="24" height="24" class="CnNKA" viewBox="0 0 24 24">
+							<path
+								opacity=".5"
+								d="M2.804 15.477s.142 1.738.175 2.286c.044.735.328 1.556.802 2.126.67.808 1.457 1.093 2.51 1.095 1.236.002 10.231.002 11.468 0 1.052-.002 1.84-.287 2.51-1.095.473-.57.757-1.391.802-2.126.032-.548.174-2.286.174-2.286"
+								stroke="#111"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+							<path
+								d="M8.496 5.33v-.372c0-1.22.988-2.208 2.208-2.208h2.582c1.219 0 2.208.989 2.208 2.208l.001.372M11.995 16.678v-1.294"
+								stroke="#111"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+							<path
+								clip-rule="evenodd"
+								d="M2.75 8.39v3.466c1.918 1.265 4.216 2.151 6.738 2.502a2.584 2.584 0 012.502-1.908c1.188 0 2.2.807 2.483 1.918 2.532-.35 4.839-1.237 6.767-2.512V8.39a3.05 3.05 0 00-3.057-3.058H5.817A3.06 3.06 0 002.75 8.39z"
+								stroke="#111"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+						</svg>
+						<p>Company</p>
+					</header>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">History</a></li>
+						<li><a href="#">Join the team</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Help Center</a></li>
+					</ul>
+				</div>
+				<div>
+					<details>
+						<summary>
+							<header>
+								<svg width="24" height="24" class="CnNKA" viewBox="0 0 24 24">
+									<g
+										clip-rule="evenodd"
+										stroke="#111"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path
+											d="M14 17.5c0-2.625.028-3.5 3.5-3.5s3.5.875 3.5 3.5.011 3.5-3.5 3.5-3.5-.875-3.5-3.5zM3 17.5c0-2.625.028-3.5 3.5-3.5s3.5.875 3.5 3.5.011 3.5-3.5 3.5S3 20.125 3 17.5z"
+										></path>
+										<path
+											opacity=".5"
+											d="M14 6.5c0-2.625.028-3.5 3.5-3.5s3.5.875 3.5 3.5.011 3.5-3.5 3.5S14 9.125 14 6.5z"
+										></path>
+										<path
+											d="M3 6.5C3 3.875 3.028 3 6.5 3s3.5.875 3.5 3.5.011 3.5-3.5 3.5S3 9.125 3 6.5z"
+										></path>
+									</g>
+								</svg>
+								<p>Product</p>
+								<svg
+									width="32"
+									height="32"
+									class="Arrow"
+									viewBox="0 0 32 32"
+									version="1.1"
+									aria-hidden="false"
+								>
+									<path
+										d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"
+									></path>
+								</svg>
+							</header>
+						</summary>
+						<ul>
+							<li><a href="#">Developers/API</a></li>
+							<li><a href="#">Unsplash Dataset</a></li>
+							<li><a href="#">Unsplash for IOS</a></li>
+							<li><a href="#">Apps & Plugins</a></li>
+						</ul>
+					</details>
+					<header>
+						<svg width="24" height="24" class="CnNKA" viewBox="0 0 24 24">
+							<g
+								clip-rule="evenodd"
+								stroke="#111"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path
+									d="M14 17.5c0-2.625.028-3.5 3.5-3.5s3.5.875 3.5 3.5.011 3.5-3.5 3.5-3.5-.875-3.5-3.5zM3 17.5c0-2.625.028-3.5 3.5-3.5s3.5.875 3.5 3.5.011 3.5-3.5 3.5S3 20.125 3 17.5z"
+								></path>
+								<path
+									opacity=".5"
+									d="M14 6.5c0-2.625.028-3.5 3.5-3.5s3.5.875 3.5 3.5.011 3.5-3.5 3.5S14 9.125 14 6.5z"
+								></path>
+								<path
+									d="M3 6.5C3 3.875 3.028 3 6.5 3s3.5.875 3.5 3.5.011 3.5-3.5 3.5S3 9.125 3 6.5z"
+								></path>
+							</g>
+						</svg>
+						<p>Product</p>
+					</header>
+					<ul>
+						<li><a href="#">Developers/API</a></li>
+						<li><a href="#">Unsplash Dataset</a></li>
+						<li><a href="#">Unsplash for IOS</a></li>
+						<li><a href="#">Apps & Plugins</a></li>
+					</ul>
+				</div>
+				<div>
+					<details>
+						<summary>
+							<header>
+								<svg width="24" height="24" class="CnNKA" viewBox="0 0 24 24">
+									<g
+										stroke="#111"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path
+											d="M19.729 14.25c1.35.202 2.294.675 2.294 1.65 0 .671-.445 1.107-1.163 1.381"
+										></path>
+										<path
+											clip-rule="evenodd"
+											d="M11.887 14.664c-3.214 0-5.96.487-5.96 2.432 0 1.944 2.729 2.445 5.96 2.445 3.214 0 5.958-.482 5.958-2.428s-2.727-2.45-5.958-2.45z"
+										></path>
+										<path
+											d="M4.044 14.25c-1.351.202-2.294.675-2.294 1.65 0 .671.444 1.107 1.162 1.381"
+										></path>
+										<g>
+											<path
+												opacity=".5"
+												d="M17.888 10.897a2.876 2.876 0 002.472-2.841 2.875 2.875 0 00-2.406-2.836"
+											></path>
+											<path
+												opacity=".5"
+												clip-rule="evenodd"
+												d="M11.887 11.888a3.819 3.819 0 10-3.82-3.82 3.804 3.804 0 003.792 3.82h.028z"
+											></path>
+											<path
+												opacity=".5"
+												d="M5.885 10.897a2.875 2.875 0 01-2.472-2.841A2.875 2.875 0 015.819 5.22"
+											></path>
+										</g>
+									</g>
+								</svg>
+								<p>Community</p>
+								<svg
+									width="32"
+									height="32"
+									class="Arrow"
+									viewBox="0 0 32 32"
+									version="1.1"
+									aria-hidden="false"
+								>
+									<path
+										d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"
+									></path>
+								</svg>
+							</header>
+						</summary>
+						<ul>
+							<li><a href="#">Become a Contributor</a></li>
+							<li><a href="#">Topics</a></li>
+							<li><a href="#">Collections</a></li>
+							<li><a href="#">Trends</a></li>
+							<li><a href="#">Unsplash Awards</a></li>
+							<li><a href="#">Stats</a></li>
+						</ul>
+					</details>
+					<header>
+						<svg width="24" height="24" class="CnNKA" viewBox="0 0 24 24">
+							<g
+								stroke="#111"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path
+									d="M19.729 14.25c1.35.202 2.294.675 2.294 1.65 0 .671-.445 1.107-1.163 1.381"
+								></path>
+								<path
+									clip-rule="evenodd"
+									d="M11.887 14.664c-3.214 0-5.96.487-5.96 2.432 0 1.944 2.729 2.445 5.96 2.445 3.214 0 5.958-.482 5.958-2.428s-2.727-2.45-5.958-2.45z"
+								></path>
+								<path
+									d="M4.044 14.25c-1.351.202-2.294.675-2.294 1.65 0 .671.444 1.107 1.162 1.381"
+								></path>
+								<g>
+									<path
+										opacity=".5"
+										d="M17.888 10.897a2.876 2.876 0 002.472-2.841 2.875 2.875 0 00-2.406-2.836"
+									></path>
+									<path
+										opacity=".5"
+										clip-rule="evenodd"
+										d="M11.887 11.888a3.819 3.819 0 10-3.82-3.82 3.804 3.804 0 003.792 3.82h.028z"
+									></path>
+									<path
+										opacity=".5"
+										d="M5.885 10.897a2.875 2.875 0 01-2.472-2.841A2.875 2.875 0 015.819 5.22"
+									></path>
+								</g>
+							</g>
+						</svg>
+						<p>Community</p>
+					</header>
+					<ul>
+						<li><a href="#">Become a Contributor</a></li>
+						<li><a href="#">Topics</a></li>
+						<li><a href="#">Collections</a></li>
+						<li><a href="#">Trends</a></li>
+						<li><a href="#">Unsplash Awards</a></li>
+						<li><a href="#">Stats</a></li>
+						<li>
+							<i class="fa-brands fa-twitter"></i
+							><i class="fa-brands fa-facebook"></i
+							><i class="fa-brands fa-instagram"></i>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<details>
+						<summary>
+							<header>
+								<svg width="24" height="24" class="CnNKA" viewBox="0 0 24 24">
+									<path
+										opacity=".5"
+										d="M15.716 16.223h-7.22M15.716 12.037h-7.22M11.251 7.86H8.496"
+										stroke="#111"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+									<path
+										clip-rule="evenodd"
+										d="M15.909 2.75l-7.69.004c-2.76.017-4.468 1.833-4.468 4.603v9.196c0 2.784 1.722 4.607 4.506 4.607l7.689-.003c2.76-.017 4.47-1.834 4.47-4.604V7.357c0-2.784-1.723-4.607-4.507-4.607z"
+										stroke="#111"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+								</svg>
+								<p>Legal</p>
+								<svg
+									width="32"
+									height="32"
+									class="Arrow"
+									viewBox="0 0 32 32"
+									version="1.1"
+									aria-hidden="false"
+								>
+									<path
+										d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"
+									></path>
+								</svg>
+							</header>
+						</summary>
+						<ul>
+							<li><a href="#">Licence</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms</a></li>
+							<li><a href="#">Security</a></li>
+						</ul>
+					</details>
+				</div>
+				<div>
+					<details>
+						<summary>
+							<header>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10.304 3.232a.732.732 0 0 0-1.465 0v1.22H2.733a.733.733 0 1 0 0 1.464h10.155c-1.046 2.543-2.02 4.188-3.211 5.636l-.092.112c-.638-.701-1.084-1.472-1.8-2.902a.733.733 0 0 0-1.311.654c.735 1.47 1.263 2.406 2.07 3.28l.057.061c-.96.998-2.084 2.005-3.497 3.272l-.908.812a.733.733 0 1 0 .981 1.09l.902-.81c1.41-1.262 2.583-2.311 3.599-3.371.628.517 1.4 1.078 2.398 1.79a.732.732 0 1 0 .852-1.19c-.986-.704-1.707-1.23-2.268-1.689l.15-.18c1.396-1.698 2.49-3.614 3.658-6.565h1.942a.733.733 0 1 0 0-1.464h-6.106v-1.22Z"
+										fill="#111111"
+										fill-opacity="0.5"
+									></path>
+									<path
+										d="M17.378 10.309a.732.732 0 0 1 .68.46l3.9 9.742a.73.73 0 0 1-1.358.542l-1.043-2.604H15.2l-1.043 2.605a.731.731 0 0 1-1.358-.543l3.9-9.743a.732.732 0 0 1 .68-.46Zm-1.593 6.679h3.187l-1.594-3.98-1.593 3.98Z"
+										fill="#111111"
+									></path>
+								</svg>
+								<p>English</p>
+								<svg
+									width="32"
+									height="32"
+									class="Arrow"
+									viewBox="0 0 32 32"
+									version="1.1"
+									aria-hidden="false"
+								>
+									<path
+										d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"
+									></path>
+								</svg>
+							</header>
+						</summary>
+						<ul>
+							<li><a href="#">English</a></li>
+							<li><a href="#">Español</a></li>
+						</ul>
+					</details>
+				</div>
+			</div>
+
+			<hr style="background-color: gray" />
+			<div id="footer">
+				<ul>
+					<li><a href="#">Licence</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Security</a></li>
+				</ul>
+				<div>
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M10.304 3.232a.732.732 0 0 0-1.465 0v1.22H2.733a.733.733 0 1 0 0 1.464h10.155c-1.046 2.543-2.02 4.188-3.211 5.636l-.092.112c-.638-.701-1.084-1.472-1.8-2.902a.733.733 0 0 0-1.311.654c.735 1.47 1.263 2.406 2.07 3.28l.057.061c-.96.998-2.084 2.005-3.497 3.272l-.908.812a.733.733 0 1 0 .981 1.09l.902-.81c1.41-1.262 2.583-2.311 3.599-3.371.628.517 1.4 1.078 2.398 1.79a.732.732 0 1 0 .852-1.19c-.986-.704-1.707-1.23-2.268-1.689l.15-.18c1.396-1.698 2.49-3.614 3.658-6.565h1.942a.733.733 0 1 0 0-1.464h-6.106v-1.22Z"
+							fill="#111111"
+							fill-opacity="0.5"
+						></path>
+						<path
+							d="M17.378 10.309a.732.732 0 0 1 .68.46l3.9 9.742a.73.73 0 0 1-1.358.542l-1.043-2.604H15.2l-1.043 2.605a.731.731 0 0 1-1.358-.543l3.9-9.743a.732.732 0 0 1 .68-.46Zm-1.593 6.679h3.187l-1.594-3.98-1.593 3.98Z"
+							fill="#111111"
+						></path>
+					</svg>
+
+					<select name="" id="language">
+						<option value="English">English</option>
+						<option value="Español">Español</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="block-1">
+				<h1>Architecture</h1>
+				<p>
+					Explore exteriors from around the world — from brutalist buildings to
+					minimalist structures that will give you a new appreciation for the
+					art of architecture.
+				</p>
+			</div>
+			<div class="block-2">
+				<div class="block-2--child">
+					<div>
+						<svg
+							width="32"
+							height="32"
+							class="qZLl_"
+							viewBox="0 0 32 32"
+							version="1.1"
+							aria-hidden="false"
+						>
+							<path
+								d="M16 2.7C8.7 2.7 2.7 8.7 2.7 16s6 13.3 13.3 13.3 13.3-6 13.3-13.3S23.3 2.7 16 2.7zm-.7 24v-8.3h-4.6l6.7-13v8.3h4.5l-6.6 13z"
+							></path>
+						</svg>
+						<span>Status</span>
+						<span>Open</span>
+					</div>
+					<div>
+						<svg
+							width="32"
+							height="32"
+							class="qZLl_"
+							viewBox="0 0 32 32"
+							version="1.1"
+							aria-hidden="false"
+						>
+							<path
+								d="M16 2.7C8.6 2.7 2.7 8.6 2.7 16s6 13.3 13.3 13.3 13.3-6 13.3-13.3S23.4 2.7 16 2.7zm0 4c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm0 18.9c-3.3 0-6.3-1.7-8-4.3 0-2.7 5.3-4.1 8-4.1s8 1.5 8 4.1c-1.7 2.6-4.7 4.3-8 4.3z"
+							></path>
+						</svg>
+						<span>Curator</span>
+						<img
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEUAAAD////V1dWWlpZ0dHTPz89qamrh4eGQkJDk5OTR0dGtra3Y2NgWv+ptAAABL0lEQVR4nO3cMQ7CQAxFwQCBQOD+56Wms2RHxjDvAKs/vbXLqaR1qW+tmbbUPENISJiIMBghIWEiwmCEhISJCIMREhImIgxGSEiYiDAYISFhIsJghISEiQiDERISJiIMRkhImIgwGCEhYSLCYISEhIkIgxESEiYiDPb7wtsBwlvNtCLhdq5vq5lWJPziCOdHOD/C+RHOj3B+hPMjnB/h/AjnRzg/wvkRzo9wfoTzI5wf4fz+QHip6P44YNrjXrKt6KrgeoDwWrStJkJCwv4ICQn7IyQk7I+QkLA/QkLC/ggJCfsjJCTsj5CQsD9CQsL+CAkJ+yMkJOyPkJCwP0JCwv4ICQn7IyQk7G8/QLh3oz56vsq/oH09u1GSJEmSJEmSJEmSJEmSJEmSJEmSJP1rbwwaXQZE0kwUAAAAAElFTkSuQmCC"
+							alt="logo"
+						/>
+					</div>
+					<div>
+						<svg
+							width="32"
+							height="32"
+							class="qZLl_"
+							viewBox="0 0 32 32"
+							version="1.1"
+							aria-hidden="false"
+						>
+							<path
+								d="M26.7 4H5.3C4.5 4 4 4.5 4 5.3v21.3c0 .9.5 1.4 1.3 1.4h21.3c.8 0 1.3-.5 1.3-1.3V5.3c.1-.8-.4-1.3-1.2-1.3zm-20 20l4.7-6 3.3 4 4.7-6 6 8H6.7z"
+							></path>
+						</svg>
+						<span>Contributions</span>
+						<span>5.1K</span>
+					</div>
+					<div>
+						<svg
+							width="32"
+							height="32"
+							class="qZLl_"
+							viewBox="0 0 32 32"
+							version="1.1"
+							aria-hidden="false"
+						>
+							<path
+								d="M30.67 22.67v4h-5.34v-4a6.21 6.21 0 00-3.1-5.16c3.68.49 8.44 2.25 8.44 5.16zM12 16a5.34 5.34 0 10-5.33-5.33A5.33 5.33 0 0012 16zm8 0a5.34 5.34 0 000-10.67 5.72 5.72 0 00-1.77.32 8 8 0 010 10A5.44 5.44 0 0020 16zm-8 1.33c-3.56 0-10.67 1.79-10.67 5.34v4h21.34v-4c0-3.55-7.11-5.34-10.67-5.34z"
+							></path>
+						</svg>
+						<span>Top Contributors</span>
+						<div>
+							<img
+								loading="lazy"
+								srcset="
+									https://images.unsplash.com/profile-1602499837447-54090944da0bimage?dpr=1&amp;auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff 1x,
+									https://images.unsplash.com/profile-1602499837447-54090944da0bimage?dpr=2&amp;auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff 2x
+								"
+								src="https://images.unsplash.com/profile-1602499837447-54090944da0bimage?auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff"
+								width="16"
+								height="16"
+								role="presentation"
+								alt="Go to Ehimetalor Akhere Unuabona's profile"
+							/>
+							<img
+								loading="lazy"
+								srcset="
+									https://images.unsplash.com/profile-1495427732560-fe5248ad6638?dpr=1&amp;auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff 1x,
+									https://images.unsplash.com/profile-1495427732560-fe5248ad6638?dpr=2&amp;auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff 2x
+								"
+								src="https://images.unsplash.com/profile-1495427732560-fe5248ad6638?auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff"
+								width="16"
+								height="16"
+								role="presentation"
+								alt="Go to Nathan Dumlao's profile"
+							/>
+							<img
+								loading="lazy"
+								srcset="
+									https://images.unsplash.com/profile-1547459104692-5b9ce4d8e152?dpr=1&amp;auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff 1x,
+									https://images.unsplash.com/profile-1547459104692-5b9ce4d8e152?dpr=2&amp;auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff 2x
+								"
+								src="https://images.unsplash.com/profile-1547459104692-5b9ce4d8e152?auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff"
+								width="16"
+								height="16"
+								role="presentation"
+								alt="Go to Norbu GYACHUNG's profile"
+							/>
+							<img
+								loading="lazy"
+								srcset="
+									https://images.unsplash.com/profile-1641662541726-527734cb4708image?dpr=1&amp;auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff 1x,
+									https://images.unsplash.com/profile-1641662541726-527734cb4708image?dpr=2&amp;auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff 2x
+								"
+								src="https://images.unsplash.com/profile-1641662541726-527734cb4708image?auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff"
+								width="16"
+								height="16"
+								role="presentation"
+								alt="Go to Markus Spiske's profile"
+							/>
+							<img
+								loading="lazy"
+								srcset="
+									https://images.unsplash.com/profile-1648284806245-917d58e93dce?dpr=1&amp;auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff 1x,
+									https://images.unsplash.com/profile-1648284806245-917d58e93dce?dpr=2&amp;auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff 2x
+								"
+								src="https://images.unsplash.com/profile-1648284806245-917d58e93dce?auto=format&amp;fit=crop&amp;w=16&amp;h=16&amp;q=60&amp;crop=faces&amp;bg=fff"
+								width="16"
+								height="16"
+								role="presentation"
+								alt="Go to LOGAN WEAVER | @LGNWVR's profile"
+							/>
+						</div>
+					</div>
+				</div>
+				<button>Submit to <b>Current Events</b></button>
+			</div>
+		</div>
+		<div id="gallery">
+			<img
+				src="https://images.unsplash.com/photo-1655097775698-90ef99a029b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8cm5TS0RId3dZVWt8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654887010535-23ae7c1bc59d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654950841083-119c92561ac9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8cm5TS0RId3dZVWt8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654887010535-bca349d8578b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654810106546-5278e64b2638?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654671192969-3724d102f652?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654763001397-8ee3abb54a24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="iamge"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654763000188-d87570fbf3d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654699776938-436a32b9a5ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654693655395-c89d7eb874bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654425597513-c46d10bf3b03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1542662544-4f89ee986134?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654948493470-8bb04b7331cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654767713265-b6eec6a288c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM1fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654722440107-178ed521a89a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQyfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="iamge"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654763000666-e198fdaf9ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQxfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654763001405-e714d19333e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQwfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654287873401-0a45c66cee96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ1fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654515681623-65c0dc3d0b8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ3fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654025027219-22bab97aaf1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUzfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="image"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1654342999844-1d49a8241c6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUxfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+				alt="iamge"
+			/>
+		</div>
+	</body>
+</html>
