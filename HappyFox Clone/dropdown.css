@@ -1,0 +1,73 @@
+.menu {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  top: 20%;
+  background-color: antiquewhite;
+}
+#menu1,
+#menu2,
+#menu3,
+#menu4 {
+  display: flex;
+  flex-direction: column;
+}
+.small img {
+  width: 13% !important;
+}
+.menu span {
+  position: relative;
+  bottom: 17px;
+  left: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: hero-new, sans-serif;
+}
+.menu h4{
+    color: #8d8d8d;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: hero-new, sans-serif;
+    line-height: 17px;
+}
+.menu2,.menu3{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+#menu4>div{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 70%;
+  margin: 17px;
+  height: 100%;
+}
+#menu4 img{
+    position: relative;
+    width: 100%;
+}
+#menu1>div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  margin-top: 16px;
+  position: relative;
+  left: 20%;
+}
+.menu2>div,.menu3>div{
+  line-height: 18px;
+  height: 174px;
+  width: 77%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 15px;
+}
+.menu2>div:hover,.menu3>div:hover{
+    background-color: beige;
+    cursor: pointer;
+}
